@@ -60,7 +60,7 @@ cityForm.addEventListener('submit',e => {
      updateCity(city).then(data=> {
          //Update UI after getting data
          updateUI(data)
-         //If you are judging my code, i will start judging your pp size
+         //If you are judging my code, i will start judging your pp size.
      }).catch(err => console.log(err))
 
     })
