@@ -60,7 +60,14 @@ cityForm.addEventListener('submit',e => {
      updateCity(city).then(data=> {
          //Update UI after getting data
          updateUI(data)
-         //If you are judging my code, i will start judging your pp size.:) 
+         //If you start judging my code, i will start judging your pp size.:) 
      }).catch(err => console.log(err))
 
+     //Setting Local Storage
+     localStorage.setItem('city',city)
+
     })
+    //If there is data in local storage, fetch it and display 
+    if(localStorage.getItem('city')){
+        updateCity(localStorage.getItem('city')).then(data => updateUI(data)).catch(err=>console.log(err))
+    }

@@ -1,9 +1,10 @@
-const key = 'N6JKlGxvWAjgSHEcF6aM1wJsdxFDP94m';
+
+//API from https://www.developer.accuweather.com
+const key = 'BHJZVeiEt2WBGH42HPot5SmGvHG2fwaA';
 
 
 
 const getWeather = async id => {
-
 
     const baseUrl = 'http://dataservice.accuweather.com/currentconditions/v1/';
     const queryParam = `${id}?apikey=${key}`;
